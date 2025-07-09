@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>万華鏡設定</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>万華鏡設定</h1>
+  <label>
+    パーツ数:
+    <input type="number" id="partCount" min="3" max="20" value="6">
+  </label>
+  <label>
+    回転速度:
+    <input type="range" id="rotationSpeed" min="0" max="10" step="0.1" value="1">
+  </label>
+  <label>
+    マスク形状:
+    <select id="maskShape">
+      <option value="circle">丸</option>
+      <option value="triangle">三角</option>
+    </select>
+  </label>
+  <button id="saveSettings">設定を保存</button>
+  <a href="/index.html">戻る</a>
+
+  <script type="module" src="/src/settings.ts"></script>
+</body>
+</html>
